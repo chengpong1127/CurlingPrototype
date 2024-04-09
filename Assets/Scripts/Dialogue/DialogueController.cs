@@ -7,39 +7,36 @@ public class DialogueController: MonoBehaviour{
     public UnityEvent OnNextParagraph;
     public UnityEvent OnDialogueEnd;
 
-    public Dialogue dialogue;
-    private Queue<string> running_paragraphs;
+    public Message[] Messages;
+    private Queue<Message> running_messages;
 
-    public string CurrentParagraph{
+    public Message CurrentParagraph{
         get{
-            if (running_paragraphs == null || running_paragraphs.Count == 0){
+            if (running_messages == null || running_messages.Count == 0){
                 return null;
             }else{
-                return running_paragraphs.Peek();
+                return running_messages.Peek();
             }
         }
     }
     [ContextMenu("StartDialogue")]
     public void StartDialogue(){
         OnDialogueStart.Invoke();
-        running_paragraphs = new Queue<string>();
-        foreach (string paragraph in dialogue.paragraphs){
-            running_paragraphs.Enqueue(paragraph);
-        }
+        running_messages = new Queue<Message>(Messages);
     }
     [ContextMenu("NextParagraph")]
     public void NextParagraph(){
-        if (running_paragraphs.Count == 0){
+        if (running_messages.Count == 0){
             EndDialogue();
             return;
         }
-        running_paragraphs.Dequeue();
+        running_messages.Dequeue();
         OnNextParagraph.Invoke();
     }
     [ContextMenu("EndDialogue")]
     public void EndDialogue(){
         OnDialogueEnd.Invoke();
-        running_paragraphs = null;
+        running_messages = null;
     }
 
 
