@@ -17,7 +17,7 @@ public class StartSceneManager : MonoBehaviour
     public void EnterTactic(){
 
     }
-    [ContextMenu("EnterChallenge")]
+    [ContextMenu("QuitGame")]
     public void QuitGame(){
 
     }
