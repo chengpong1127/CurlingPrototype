@@ -361,9 +361,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartSceneUI
       objectReference: {fileID: 0}
+    - target: {fileID: 1038684596259339642, guid: 4f955f2e97253422db2db8cd912181aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2087252715}
+    - target: {fileID: 1038684596259339642, guid: 4f955f2e97253422db2db8cd912181aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnterTutorial
+      objectReference: {fileID: 0}
     - target: {fileID: 1947027230389004902, guid: 4f955f2e97253422db2db8cd912181aa, type: 3}
       propertyPath: m_RenderMode
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3143607932101968160, guid: 4f955f2e97253422db2db8cd912181aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2087252715}
+    - target: {fileID: 3143607932101968160, guid: 4f955f2e97253422db2db8cd912181aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnterPractice
+      objectReference: {fileID: 0}
+    - target: {fileID: 4020933715984649973, guid: 4f955f2e97253422db2db8cd912181aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2087252715}
+    - target: {fileID: 4020933715984649973, guid: 4f955f2e97253422db2db8cd912181aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
       objectReference: {fileID: 0}
     - target: {fileID: 4229835134879954001, guid: 4f955f2e97253422db2db8cd912181aa, type: 3}
       propertyPath: m_Pivot.x
@@ -412,6 +436,22 @@ PrefabInstance:
     - target: {fileID: 4229835134879954001, guid: 4f955f2e97253422db2db8cd912181aa, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5309975749111831513, guid: 4f955f2e97253422db2db8cd912181aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2087252715}
+    - target: {fileID: 5309975749111831513, guid: 4f955f2e97253422db2db8cd912181aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnterTactic
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394677023648405000, guid: 4f955f2e97253422db2db8cd912181aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2087252715}
+    - target: {fileID: 5394677023648405000, guid: 4f955f2e97253422db2db8cd912181aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnterSetting
       objectReference: {fileID: 0}
     - target: {fileID: 7092809752577771012, guid: 4f955f2e97253422db2db8cd912181aa, type: 3}
       propertyPath: m_PresetInfoIsWorld
