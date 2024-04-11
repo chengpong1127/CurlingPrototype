@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [DisallowMultipleComponent]
-public class SingletonWithoutDestroy : Singleton
+public class SingletonWithoutDestroy<T> : Singleton<T> where T : MonoBehaviour
 {
     protected override void Awake()
     {
