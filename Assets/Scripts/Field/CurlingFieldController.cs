@@ -3,46 +3,35 @@ using UnityEngine.Events;
 
 public class CurlingFieldController : MonoBehaviour
 {
-    public UnityEvent<double> OnBallStopAtFirstCircle;
-    public UnityEvent<double> OnBallStopAtSecondCircle;
+    private Vector3 initialPosition; // 冰壺初始位置
+    private bool isSiding = false;   // 冰壺是否正在滑行
+    private Rigidbody rb;            // 冰壺的Rigidbody
 
-    public float firstCircleRadius = 5f; // 第一个圆的半径
-    public float secondCircleRadius = 10f; // 第二个圆的半径
-
-    private Vector3 initialPosition;
-    private Rigidbody ballRigidbody;
-    private bool isMoving = false;
-
-    void Start()
+    private void Start()
     {
-        ballRigidbody = GetComponent<Rigidbody>();
-        initialPosition = transform.position;
+        initialPosition = transform.position; // 保存冰壺的初始位置
+        rb = GetComponent<Rigidbody>();       // 獲得冰壺的Rigidboby
     }
 
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        if (isMoving && ballRigidbody.velocity.magnitude < 0.1f) // 當球的速度接近零時，認為球停止了
+        if (other.CompareTag("CurlingStone")) ; // 確認碰撞物體是冰壺
         {
-            isMoving = false;
+            isSiding = true ;
 
-            // 計算球距離圓心的距離
-            double distanceFromCenter = Vector3.Distance(initialPosition, transform.position);
-
-            // 檢查距離並觸發相應的事件
-            if (distanceFromCenter < firstCircleRadius)
-            {
-                OnBallStopAtFirstCircle.Invoke(distanceFromCenter);
-            }
-            else if (distanceFromCenter < secondCircleRadius)
-            {
-                OnBallStopAtSecondCircle.Invoke(distanceFromCenter);
-            }
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    private void Update()
     {
-        // 當球碰到其他物體時認為球在移動
-        isMoving = true;
+        if (isSiding) 
+        {
+            // 每偵更新冰壺滑行距離
+            float distance = Vector3.Distance(initialPosition, rb.velocity);
+            // 待完成，冰壺停止時，紀錄距離
+        
+        }
     }
+
+
 }
