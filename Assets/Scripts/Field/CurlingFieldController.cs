@@ -3,22 +3,24 @@ using UnityEngine.Events;
 
 public class CurlingFieldController : MonoBehaviour
 {
-    private Vector3 initialPosition; // 冰壺初始位置
-    private bool isSiding = false;   // 冰壺是否正在滑行
-    private Rigidbody rb;            // 冰壺的Rigidbody
+    private Vector3 initialPosition; // Inital position of the curling stone
+    private bool isSiding = false;   // Flag to indicate if the curing stone is sliding
+    private float slideStartTime;        // Time when sliding starts
+    private float totalDistance = 0f;
+    private Rigidbody rb;            // Rigidboby component of the curling stone
 
     private void Start()
     {
-        initialPosition = transform.position; // 保存冰壺的初始位置
-        rb = GetComponent<Rigidbody>();       // 獲得冰壺的Rigidboby
+        initialPosition = transform.position; // Save the initial position of the curling stone
+        rb = GetComponent<Rigidbody>();       // Get the Rigidboby component of the curling stone
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("CurlingStone")) ; // 確認碰撞物體是冰壺
+        if (other.CompareTag("CurlingStone"))  // Check if the colliding object is the curling stone
         {
-            isSiding = true ;
-
+            isSiding = true ;            // Set the flag to indicate that the curling stone has started slidiing
+            slideStartTime = Time.time ; // Reocrd the time when sliding starts
         }
     }
 
@@ -26,10 +28,21 @@ public class CurlingFieldController : MonoBehaviour
     {
         if (isSiding) 
         {
-            // 每偵更新冰壺滑行距離
-            float distance = Vector3.Distance(initialPosition, rb.velocity);
-            // 待完成，冰壺停止時，紀錄距離
-        
+            // Calculate the sliding distance using the velocity of the Rigidboby
+            float distance = (Time.time - slideStartTime) * rb.velocity.magnitude; 
+            float distances = Vector3.Distance(initialPosition, transform.position);
+
+            totalDistance += distances;
+
+            // Check if the curling stone has stopped sliding, then reset relevent variables
+            if (rb.velocity.magnitude < 0.01f)  
+            {
+                isSiding = false ;
+                totalDistance = 0f ;
+            
+            }
+
+            
         }
     }
 
