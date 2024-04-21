@@ -5,7 +5,8 @@ using TMPro;
 using UnityEngine.Assertions;
 public class TutorialDisplayUIController : MonoBehaviour
 {
-    public Message[] TutorialMessages;
+    [SerializeField] private MessageList TutorialMessages;
+    private Message[] tutorialMessages;
     public UnityEvent OnTutorialEnd;
     [Header("References")]
     [SerializeField] private Image image;
@@ -25,7 +26,8 @@ public class TutorialDisplayUIController : MonoBehaviour
     }
 
     private void Start(){
-        applyMessage(TutorialMessages[currentMessageIndex]);
+        tutorialMessages = TutorialMessages.messages.ToArray();
+        applyMessage(tutorialMessages[currentMessageIndex]);
         nextButton.onClick.AddListener(nextMessage);
         previousButton.onClick.AddListener(previousMessage);
     }
@@ -36,10 +38,10 @@ public class TutorialDisplayUIController : MonoBehaviour
     }
 
     private void nextMessage(){
-        if (currentMessageIndex < TutorialMessages.Length - 1)
+        if (currentMessageIndex < tutorialMessages.Length - 1)
         {
             currentMessageIndex++;
-            applyMessage(TutorialMessages[currentMessageIndex]);
+            applyMessage(tutorialMessages[currentMessageIndex]);
         }
         else
         {
@@ -51,7 +53,7 @@ public class TutorialDisplayUIController : MonoBehaviour
         if (currentMessageIndex > 0)
         {
             currentMessageIndex--;
-            applyMessage(TutorialMessages[currentMessageIndex]);
+            applyMessage(tutorialMessages[currentMessageIndex]);
         }
     }
 

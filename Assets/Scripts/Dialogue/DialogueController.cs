@@ -7,7 +7,7 @@ public class DialogueController: MonoBehaviour{
     public UnityEvent OnNextParagraph;
     public UnityEvent OnDialogueEnd;
 
-    public Message[] Messages;
+    public MessageList Messages;
     private Queue<Message> running_messages;
 
     public Message CurrentParagraph{
@@ -22,7 +22,7 @@ public class DialogueController: MonoBehaviour{
     [ContextMenu("StartDialogue")]
     public void StartDialogue(){
         OnDialogueStart.Invoke();
-        running_messages = new Queue<Message>(Messages);
+        running_messages = new Queue<Message>(Messages.messages);
     }
     [ContextMenu("NextParagraph")]
     public void NextParagraph(){
