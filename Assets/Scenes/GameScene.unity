@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1772,71 +1772,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1121125582535847827, guid: 9854bb05e98038145add8ed7c25af4b1, type: 3}
   m_PrefabInstance: {fileID: 1730245945}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1800929998
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 843543115414830931, guid: d8f5011089f7b49b892e6adf5b9d45e7, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 843543115414830931, guid: d8f5011089f7b49b892e6adf5b9d45e7, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 843543115414830931, guid: d8f5011089f7b49b892e6adf5b9d45e7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 843543115414830931, guid: d8f5011089f7b49b892e6adf5b9d45e7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 843543115414830931, guid: d8f5011089f7b49b892e6adf5b9d45e7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 843543115414830931, guid: d8f5011089f7b49b892e6adf5b9d45e7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 843543115414830931, guid: d8f5011089f7b49b892e6adf5b9d45e7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 843543115414830931, guid: d8f5011089f7b49b892e6adf5b9d45e7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 843543115414830931, guid: d8f5011089f7b49b892e6adf5b9d45e7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 843543115414830931, guid: d8f5011089f7b49b892e6adf5b9d45e7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 843543115414830931, guid: d8f5011089f7b49b892e6adf5b9d45e7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 843543115414830931, guid: d8f5011089f7b49b892e6adf5b9d45e7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7750584223974267695, guid: d8f5011089f7b49b892e6adf5b9d45e7, type: 3}
-      propertyPath: m_Name
-      value: CurlingField
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8f5011089f7b49b892e6adf5b9d45e7, type: 3}
 --- !u!1 &1845159367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,14 +1914,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1571620063173206422, guid: 32a792e606cd6ef41ac4d61e56cbfae9, type: 3}
   m_PrefabInstance: {fileID: 1850977615}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2102924223
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1290452751863646, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
+      propertyPath: m_Name
+      value: Curling Rink
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077512679280314, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077512679280314, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077512679280314, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077512679280314, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077512679280314, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077512679280314, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077512679280314, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077512679280314, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077512679280314, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077512679280314, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1391364084}
   - {fileID: 223120776}
-  - {fileID: 1800929998}
   - {fileID: 459677859}
+  - {fileID: 2102924223}
   - {fileID: 434328673}
   - {fileID: 865593256}
   - {fileID: 1845159370}
