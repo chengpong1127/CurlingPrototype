@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: ExampleMessages
   m_EditorClassIdentifier: 
   messages:
-  - title: Curling
-    image: {fileID: 0}
-    message: This is the tutorial to teach you how to use this app.
   - title: 
     image: {fileID: 0}
-    message: This is message 2.
+    message: 
+    animationTrigger: 

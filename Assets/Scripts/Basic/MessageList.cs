@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu()]
 public class MessageList : ScriptableObject
 {
-    public List<Message> messages = new();
+    public List<MessageWithAnimationTrigger> messages = new();
 }

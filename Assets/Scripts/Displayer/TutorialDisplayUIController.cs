@@ -23,6 +23,7 @@ public class TutorialDisplayUIController : MonoBehaviour
         Assert.IsNotNull(this.message);
         Assert.IsNotNull(this.nextButton);
         Assert.IsNotNull(this.previousButton);
+        Assert.IsNotNull(this.TutorialMessages);
     }
 
     private void Start(){

@@ -737,7 +737,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3a822994d4c1a404fa9d5658e878cfa2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1300828398}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3a822994d4c1a404fa9d5658e878cfa2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1300828399}
   m_SourcePrefab: {fileID: 100100000, guid: 3a822994d4c1a404fa9d5658e878cfa2, type: 3}
+--- !u!95 &803621730 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 3a822994d4c1a404fa9d5658e878cfa2, type: 3}
+  m_PrefabInstance: {fileID: 803621729}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &865593254
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,6 +943,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c582ef8f0ac8f948a04a8a7dfde296c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1300828399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300828395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f959e1881a74b9fb83d7170248a86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 803621730}
+  messageList: {fileID: 0}
+  dialogueUIController: {fileID: 0}
 --- !u!1001 &1323129165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -995,6 +1018,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -68.33333
       objectReference: {fileID: 0}
+    - target: {fileID: 5325035775347555828, guid: d94fa4bcdb8804bf49ebf72becc9e915, type: 3}
+      propertyPath: TutorialMessages
+      value: 
+      objectReference: {fileID: 11400000, guid: 5cc7ee42395784f7e8182c09b7138e8a, type: 2}
     - target: {fileID: 5325035775347555828, guid: d94fa4bcdb8804bf49ebf72becc9e915, type: 3}
       propertyPath: OnTutorialEnd.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1925,6 +1952,18 @@ PrefabInstance:
     - target: {fileID: 1290452751863646, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
       propertyPath: m_Name
       value: Curling Rink
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077512679280314, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077512679280314, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077512679280314, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 4077512679280314, guid: b6dd4f4a96661184c8f14e26d98305f3, type: 3}
       propertyPath: m_LocalPosition.x

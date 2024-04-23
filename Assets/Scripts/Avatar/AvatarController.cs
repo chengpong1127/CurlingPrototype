@@ -7,5 +7,8 @@ using UnityEngine;
 /// </summary>
 public class AvatarController : MonoBehaviour
 {
-
+    [SerializeField] private Animator animator;
+    public void ActivateAnimation(string trigger){
+        animator.SetTrigger(trigger);
+    }
 }
