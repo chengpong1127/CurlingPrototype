@@ -17,3 +17,7 @@ MonoBehaviour:
     image: {fileID: 0}
     message: 
     animationTrigger: 
+  - title: 
+    image: {fileID: 0}
+    message: 
+    animationTrigger: 
