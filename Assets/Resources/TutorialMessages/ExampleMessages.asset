@@ -13,6 +13,78 @@ MonoBehaviour:
   m_Name: ExampleMessages
   m_EditorClassIdentifier: 
   messages:
+  - title: Welcome to the "Tutorial mode".
+    image: {fileID: 0}
+    message: 'Hello! Welcome to Curling Valley! I''m Elwin, your guide. It''s great
+      to see you! '
+    animationTrigger: 
+  - title: Elwin
+    image: {fileID: 0}
+    message: Are you ready to learn the secrets of curling?
+    animationTrigger: 
+  - title: Elwin
+    image: {fileID: 0}
+    message: 'Great! Curling is a precision and strategy sport played on ice. '
+    animationTrigger: 
+  - title: Elwin
+    image: {fileID: 0}
+    message: 'Each team tries to slide their stones to the target center, and the
+      closer to the center, the higher the score. '
+    animationTrigger: 
+  - title: Elwin
+    image: {fileID: 0}
+    message: This game requires skill and teamwork, and it's a lot of fun!
+    animationTrigger: 
+  - title: Elwin
+    image: {fileID: 0}
+    message: 'Now, let''s start with the basics. First, you need to learn how to
+      launch the curling stone. '
+    animationTrigger: 
+  - title: Elwin
+    image: {fileID: 0}
+    message: Follow me to the hack, and I'll show you how to properly hold and push
+      the stone.
+    animationTrigger: 
+  - title: Elwin
+    image: {fileID: 0}
+    message: 'Pay attention to my posture and the force of the push. '
+    animationTrigger: 
+  - title: Elwin
+    image: {fileID: 0}
+    message: "Now it's your turn to try. Don\u2019t worry, I\u2019ll guide you through
+      it."
+    animationTrigger: 
+  - title: Elwin
+    image: {fileID: 0}
+    message: "Very good! You\u2019ve got the hang of the basic launching technique. "
+    animationTrigger: 
+  - title: Elwin
+    image: {fileID: 0}
+    message: "Next, let\u2019s learn how to use the broom to control the stone\u2019s
+      speed and direction."
+    animationTrigger: 
+  - title: Elwin
+    image: {fileID: 0}
+    message: 'Using the broom while the stone is sliding can help keep it on the
+      right track and adjust the speed to reach the target. '
+    animationTrigger: 
+  - title: Elwin
+    image: {fileID: 0}
+    message: Try controlling the broom to see if you can stop the stone at the target
+      location.
+    animationTrigger: 
+  - title: Elwin
+    image: {fileID: 0}
+    message: "Fantastic! It looks like you\u2019ve got the basics of curling down. "
+    animationTrigger: 
+  - title: Elwin
+    image: {fileID: 0}
+    message: 'Remember, this game is not just about skill but also strategy and teamwork. '
+    animationTrigger: 
+  - title: Elwin
+    image: {fileID: 0}
+    message: Ready to join a real match and compete against other players?
+    animationTrigger: 
   - title: 
     image: {fileID: 0}
     message: 
