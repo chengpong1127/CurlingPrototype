@@ -8,19 +8,30 @@ public class AvatarWithDialogue : AvatarController
     private int messageIndex = 0;
 
     [ContextMenu("StartDialogue")]
-    public void StartDialogue(){
+    public void StartDialogue()
+    {
         messageIndex = 0;
         EnterMessage(messageList.messages[messageIndex]);
     }
 
-    public void NextMessage(){
+    public void NextMessage()
+    {
         messageIndex++;
-        EnterMessage(messageList.messages[messageIndex]);
+        if (messageIndex < messageList.messages.Count)
+        {
+            EnterMessage(messageList.messages[messageIndex]);
+        }
+        else
+        {
+            dialogueUIController.HideDialogue();
+        }
     }
 
-    private void EnterMessage(MessageWithAnimationTrigger message){
+    private void EnterMessage(MessageWithAnimationTrigger message)
+    {
         dialogueUIController.ShowDialogue(message);
-        if(message.animationTrigger != ""){
+        if (message.animationTrigger != "")
+        {
             ActivateAnimation(message.animationTrigger);
         }
     }

@@ -26,19 +26,27 @@ public class TutorialDisplayUIController : MonoBehaviour
         Assert.IsNotNull(this.TutorialMessages);
     }
 
-    private void Start(){
+    private void Start()
+    {
         tutorialMessages = TutorialMessages.messages.ToArray();
         applyMessage(tutorialMessages[currentMessageIndex]);
         nextButton.onClick.AddListener(nextMessage);
         previousButton.onClick.AddListener(previousMessage);
     }
+    public void StartTutorial()
+    {
+        Start();
+    }
 
-    private void OnDestroy(){
+
+    private void OnDestroy()
+    {
         nextButton.onClick.RemoveListener(nextMessage);
         previousButton.onClick.RemoveListener(previousMessage);
     }
 
-    private void nextMessage(){
+    private void nextMessage()
+    {
         if (currentMessageIndex < tutorialMessages.Length - 1)
         {
             currentMessageIndex++;
@@ -50,7 +58,8 @@ public class TutorialDisplayUIController : MonoBehaviour
         }
     }
 
-    private void previousMessage(){
+    private void previousMessage()
+    {
         if (currentMessageIndex > 0)
         {
             currentMessageIndex--;
