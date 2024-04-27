@@ -5,22 +5,17 @@ using UnityEngine;
 public class CurlingStoneController : MonoBehaviour
 {
     Rigidbody rb;
-    public Transform controller;
-    float speed = 10f;
-    private bool isHeld = false;
+    Transform tf;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        tf = GetComponent<Transform>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("Space key was pressed.");
-            Vector3 force = new Vector3(0, 0, 1) * speed;
-            rb.AddForce(force);
-        }
+        // Only keep the rotation around the Y axis
+        tf.rotation = Quaternion.Euler(0, tf.rotation.eulerAngles.y, 0);
     }
 }
