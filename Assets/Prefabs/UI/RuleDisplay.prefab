@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7536835112338890149}
   - component: {fileID: 5325035775347555828}
   m_Layer: 0
-  m_Name: TutorialDisplay
+  m_Name: RuleDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

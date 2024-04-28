@@ -3,7 +3,7 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Assertions;
-public class TutorialDisplayUIController : MonoBehaviour
+public class RuleDisplayUIController : MonoBehaviour
 {
     [SerializeField] private MessageList TutorialMessages;
     private Message[] tutorialMessages;

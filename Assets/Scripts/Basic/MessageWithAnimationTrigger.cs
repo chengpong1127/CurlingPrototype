@@ -1,7 +1,7 @@
 using System;
 
 [System.Serializable]
-public class MessageWithAnimationTrigger: Message{
-    public string animationTrigger;
+public class MessageWithGameEventTrigger: Message{
+    public string GameEventTrigger;
     //public bool Stop;
 }

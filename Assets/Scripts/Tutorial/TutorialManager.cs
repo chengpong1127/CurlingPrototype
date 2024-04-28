@@ -5,8 +5,8 @@ using UnityEngine.Events;
 public class TutorialManager : MonoBehaviour
 {
     public UnityEvent OnTutorialEnd;
-    [SerializeField] private AvatarWithDialogue avatar;
-    [SerializeField] private TutorialDisplayUIController tutorialDisplayUIController;
+    [SerializeField] private AvatarWithDialogue tutor;
+    [SerializeField] private RuleDisplayUIController tutorialDisplayUIController;
     private void Awake()
     {
     }
@@ -20,6 +20,10 @@ public class TutorialManager : MonoBehaviour
     {
         Debug.Log("Tutorial Ended");
         OnTutorialEnd.Invoke();
+    }
+
+    public void ActivateTutorAnimationTrigger(string trigger){
+        tutor.ActivateAnimation(trigger);
     }
 
 }
