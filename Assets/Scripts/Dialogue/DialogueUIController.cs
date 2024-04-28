@@ -8,7 +8,7 @@ public class DialogueUIController : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private GameObject dialoguePanel;
 
-    public void ShowDialogue(MessageWithAnimationTrigger message)
+    public void ShowDialogue(MessageWithGameEventTrigger message)
     {
         dialoguePanel.SetActive(true);
         dialogueText.text = message.message;

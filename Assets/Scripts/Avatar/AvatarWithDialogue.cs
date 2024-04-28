@@ -25,15 +25,15 @@ public class AvatarWithDialogue : AvatarController
         {
             dialogueUIController.HideDialogue();
         }
+        var message = messageList.messages[messageIndex];
+        var EventName = message.GameEventTrigger;
+        GameEvent.RunEvent(EventName);
     }
 
-    private void EnterMessage(MessageWithAnimationTrigger message)
+    private void EnterMessage(MessageWithGameEventTrigger message)
     {
         dialogueUIController.ShowDialogue(message);
-        if (message.animationTrigger != "")
-        {
-            ActivateAnimation(message.animationTrigger);
-        }
+       
     }
 
 }

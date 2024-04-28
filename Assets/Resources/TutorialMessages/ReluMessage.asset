@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 334d29c960e0a4ac0bdc1a1529bc6efb, type: 3}
-  m_Name: ExampleMessages
+  m_Name: ReluMessage
   m_EditorClassIdentifier: 
   messages:
   - title: Elwin
