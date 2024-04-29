@@ -3,7 +3,7 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Assertions;
-public class RuleDisplayUIController : MonoBehaviour
+public class TutorialDisplayUIController : MonoBehaviour
 {
     [SerializeField] private MessageList TutorialMessages;
     private Message[] tutorialMessages;
@@ -26,9 +26,10 @@ public class RuleDisplayUIController : MonoBehaviour
         Assert.IsNotNull(this.TutorialMessages);
     }
 
+
     private void Start()
     {
-        tutorialMessages = TutorialMessages.messages.ToArray();
+        tutorialMessages = TutorialMessages.messages.ToArray(); // DialogMessages
         applyMessage(tutorialMessages[currentMessageIndex]);
         nextButton.onClick.AddListener(nextMessage);
         previousButton.onClick.AddListener(previousMessage);

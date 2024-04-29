@@ -6,7 +6,7 @@ public class TutorialManager : MonoBehaviour
 {
     public UnityEvent OnTutorialEnd;
     [SerializeField] private AvatarWithDialogue tutor;
-    [SerializeField] private RuleDisplayUIController tutorialDisplayUIController;
+    [SerializeField] private  TutorialDisplayUIController tutorialDisplayUIController;
     private void Awake()
     {
     }

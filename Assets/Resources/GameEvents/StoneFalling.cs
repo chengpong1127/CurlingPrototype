@@ -9,7 +9,7 @@ public class StoneFalling: GameEvent{
     public override void Run()
     {
         // Do something
-        TutorialGameRunner.Instance.TutorialManager.ActivateTutorAnimationTrigger("StoneFalling");
+        TutorialGameRunner.Instance.TutorialManager.ActivateTutorAnimationTrigger("Happy");
 
         // tutor.animator.SetTrigger("StoneFalling");
     }
