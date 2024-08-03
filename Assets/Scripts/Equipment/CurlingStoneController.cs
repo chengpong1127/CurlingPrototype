@@ -17,5 +17,9 @@ public class CurlingStoneController : MonoBehaviour
     {
         // Only keep the rotation around the Y axis
         tf.rotation = Quaternion.Euler(0, tf.rotation.eulerAngles.y, 0);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(Vector3.forward * 100);
+        }
     }
 }
